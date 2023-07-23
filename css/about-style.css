@@ -1,0 +1,633 @@
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:fit-content;
+    padding-bottom: 15px;
+    background-color: #f2f2f2;
+    margin-bottom: 100px;
+}
+
+.about-contents {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: flex-start;
+    column-gap: 4%;
+    row-gap: 4%;
+    height: 100%;
+    width:fit-content;
+}
+
+.about-contents h1{
+    margin-top: 100px;
+    margin-bottom: 40px;
+    color: maroon;
+    width:100%;
+    text-align: center;
+}
+
+.about-company {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.about-company figure {
+    width: 400px;
+    height:400px;
+}
+
+.about-company img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+.about-company div {
+    width: 600px;
+    height: fit-content;
+}
+
+.about-company p {
+    text-align:justify;
+    word-break:keep-all;
+    overflow: hidden;
+}
+
+
+.about-company button , .objectives button {
+    padding: 10px;
+    color: #f2f2f2;
+    background-color: maroon;
+    border:none;
+    outline: none;
+    text-transform: capitalize;
+    font-size: 15px;
+    transition: 0.2s;
+}
+
+.about-company i{
+    font-size: 13px;
+}
+
+.about-company button:hover , .objectives button:hover{
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.about-company #text1{
+    display: none;
+}
+
+.about-company #text1.show{
+    display: inline;
+}
+
+ .objectives {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    column-gap:45px;
+    width: 100%;
+    height: fit-content;
+
+}
+
+.objectives div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0 10px 0;
+    margin-top: 10px;
+    width:320px;
+    height:fit-content;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.5s;
+}
+
+.objectives div:hover{
+    box-shadow: none;
+}
+
+.objectives img{
+    width:100%;
+    height: 160px;
+}
+
+.objectives p{
+    width:90%;
+    text-align:justify;
+    word-break:keep-all;
+    font-size: 14px;
+}
+
+.objectives span{
+    display: none;
+}
+
+.objectives  #text2.show,
+.objectives  #text3.show,
+.objectives  #text4.show{
+    display: inline;
+}
+
+.objectives button , .objectives i{
+    font-size:14px ;
+}
+
+
+.team {
+    display: flex;
+    flex-direction: column;
+    width: 1050px;
+    height: 300px;
+}
+.team div:first-of-type{
+    background-color: white;
+    position: relative;
+    height: 250px;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.team div:last-of-type{
+    display: flex;
+    flex-direction: row;
+    column-gap: 5px;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+#emp1 , #emp2 , #emp3 , #emp4 , #emp5 {
+    position: absolute;
+    top: 0;
+    left:0;
+    display: flex;
+    align-items: flex-start;
+    width:100%;
+    height:100%;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.team.emp1 #emp1,
+.team.emp2 #emp2,
+.team.emp3 #emp3,
+.team.emp4 #emp4,
+.team.emp5 #emp5{
+    transition: all 0.5s ease-in-out 0.5s;
+    opacity: 1;
+}
+
+#btnEmp1 , #btnEmp2 , #btnEmp3 , #btnEmp4 , #btnEmp5{
+    border:none;
+    outline: none;
+    width:15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: darkgray;
+}
+
+.team.emp1 #btnEmp1 ,
+.team.emp2 #btnEmp2 ,
+.team.emp3 #btnEmp3 ,
+.team.emp4 #btnEmp4 ,
+.team.emp5 #btnEmp5{
+    background-color: maroon;
+}
+.team img {
+    width: 25%;
+    height: 100%;
+}
+.team h3 {
+    position: relative;
+    font-size: 20px;
+}
+
+
+#emp1 h3::before {
+    content: "Medical Consultant"; 
+    position: absolute;
+    bottom: -15px;
+    font-size: 16px;
+    color:gray;
+}
+
+#emp2 h3::before {
+    content: "Executive Vice President"; 
+    position: absolute;
+    bottom: -15px;
+    font-size: 16px;
+    color:gray;
+}
+
+#emp3 h3::before {
+    content: "Ceo"; 
+    position: absolute;
+    bottom: -15px;
+    font-size: 16px;
+    color:gray;
+}
+
+#emp4 h3::before {
+    content: "chief executive officer"; 
+    position: absolute;
+    bottom: -15px;
+    font-size: 16px;
+    color:gray;
+}
+
+/*#emp5 h3::before {
+    content: "Masters Degree in (IHRM)"; 
+    position: absolute;
+    bottom: -15px;
+    font-size: 16px;
+    color:gray;
+}*/
+
+#emp1 div , #emp2 div , #emp3 div , #emp4 div , #emp5 div {
+    flex-direction: column;
+    column-gap: 0;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height:100%;
+    width:100%;
+    padding-left:10px; 
+}
+
+.activities {
+    width:1050px; /*57%*/
+    display: flex;
+    flex-direction: column;
+    padding: 0 2vw;
+    background-color: white;
+    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.activities ul {
+    color:maroon;
+    font-size: 25px;
+}
+
+.activities p{
+    color:black;
+    font-size: 16px;
+    text-align:justify;
+    word-break:keep-all;
+    line-height: 1.7;
+}
+
+
+.agencies { 
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 1050px;
+    padding-bottom: 15px;
+    background-color: #f2f2f2;
+
+}
+
+
+
+.items {
+    position: relative;
+    width:100%;
+    height: 250px;
+    background-color: transparent;
+    cursor: pointer;
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+/*hide scrollbar but still can use it*/
+.items::-webkit-scrollbar {
+    display: none;
+}
+
+.item{
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    width:40%;
+    height: 95%;
+    /*background-color: white;*/
+    color: white;
+    font-size: 25px;
+    /*box-shadow: 0 0 10px rgba(0,0,0,0.3);*/
+    margin: 5px 2%;
+}
+
+.item img{
+    width:90%;
+    height: 140px;
+}
+
+#btn1Next , #btn1Previous {
+    position: absolute;
+    z-index: 2;
+    border:none;
+    outline: none;
+    background-color: maroon;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding: 0;
+}
+
+#btn1Next {
+    right: -25px;
+    top: 42%;
+}
+
+#btn1Previous {
+    left: -25px;
+    top: 42%;
+}
+
+
+
+#btn1Next i, #btn1Previous i {
+    font-size: 25px;
+    color: #f2f2f2;
+    transition: color 0.3s;
+}
+
+#btn1Next:hover i, #btn1Previous:hover i{
+    color: #353535;
+}
+
+@media (max-width:410px){
+    .about h1 {
+    font-size: 30px;
+}
+
+.about-company figure {
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    height: 300px;
+}
+
+.about-company div ,.objectives div , .activities , .agencies{
+    width: 300px;
+}
+
+.activities ul {
+    list-style-type: none;
+    padding-left: 10px;
+}
+
+.activities h2 {
+    font-size: 16px;
+}
+
+.activities p {
+    font-size: 14px;
+}
+
+.item {
+        width:280px;
+}
+
+#btn1Next {
+    right: 0px;
+    top: 42%;
+}
+
+#btn1Previous {
+    left: 0px;
+    top: 42%;
+}
+
+#btn1Next , #btn1Previous{
+    background-color: transparent;
+    width:30px;
+    height:30px;
+}
+
+#btn1Next i, #btn1Previous i {
+    font-size: 20px;
+    color:maroon
+}
+
+.team {
+    width:93%;
+    height: 650px;
+}
+
+.team div:first-of-type {
+    width:100%;
+    height: 600px;
+}
+
+#emp1 , #emp2 , #emp3 , #emp4 , #emp5{
+    position: absolute;
+    top: 0;
+    left:0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height: 600px;
+}
+.team img {
+    width: 180px;
+    height: 180px;
+}
+
+.team p {
+    font-size: 12px;
+}
+
+}
+
+@media (min-width:411px) and (max-width:499px){
+    .about h1 {
+    font-size: 30px;
+}
+
+.about-company figure {
+    margin: 0;
+    padding: 0;
+}
+
+.about-company div {
+    width: 400px;
+
+}
+
+.activities , .agencies {
+        width:95%;
+}
+
+
+.activities ul {
+    
+    list-style-type: none;
+    padding-left: 10px;
+}
+
+.activities h2 {
+    font-size: 16px;
+}
+
+.activities p {
+    font-size: 14px;
+}
+
+.agencies{
+    width: 350px;
+}
+
+.item {
+        width:280px;
+}
+
+#btn1Next , #btn1Previous{
+    width:40px;
+    height:40px;
+}
+
+#btn1Next i, #btn1Previous i {
+    font-size: 20px;
+}
+
+.team {
+    width:93%;
+    height: 650px;
+}
+
+.team div:first-of-type {
+    width:100%;
+    height: 600px;
+}
+
+#emp1 , #emp2 , #emp3 , #emp4 , #emp5{
+    position: absolute;
+    top: 0;
+    left:0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height: 600px;
+}
+.team img {
+    width: 180px;
+    height: 180px;
+}
+
+.team p {
+    font-size: 12px;
+}
+
+}
+
+@media (min-width:500px) and (max-width:749px){
+
+    .about h1 {
+        font-size: 45px;
+    }
+    .about-company div {
+     width: 400px;
+    }
+
+    .activities , .agencies{
+        width:90%;
+    }
+
+    #btn1Next , #btn1Previous{
+    width:40px;
+    height:40px;
+}
+
+#btn1Next i, #btn1Previous i {
+    font-size: 20px;
+}
+
+.team {
+    width:93%;
+    height: 650px;
+}
+
+.team div:first-of-type {
+    width:100%;
+    height: 600px;
+}
+
+#emp1 , #emp2 , #emp3 , #emp4 , #emp5{
+    position: absolute;
+    top: 0;
+    left:0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height: 600px;
+}
+.team img {
+    width: 180px;
+    height: 180px;
+}
+
+.team p {
+    font-size: 12px;
+}
+
+}
+@media (min-width:750px) and (max-width:1085px){
+    .about h1 {
+        font-size: 45px;
+    }
+    .about-company div {
+     width: 400px;
+    }
+
+    .activities , .agencies{
+        width:93%;
+    }
+
+    #btn1Next , #btn1Previous{
+    width:40px;
+    height:40px;
+}
+
+#btn1Next i, #btn1Previous i {
+    font-size: 20px;
+}
+
+.team {
+    width:93%;
+    height: 650px;
+}
+
+.team div:first-of-type {
+    width:100%;
+    height: 600px;
+}
+
+#emp1 , #emp2 , #emp3 , #emp4 , #emp5{
+    position: absolute;
+    top: 0;
+    left:0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height: 600px;
+}
+.team img {
+    width: 220px;
+    height: 220px;
+}
+}

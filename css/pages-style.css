@@ -1,0 +1,93 @@
+*{
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing:border-box;
+}
+
+html, body {
+    height: 100%; 
+    width:100%;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+body {
+padding: 0;
+margin: 0;
+font-family: 'Montserrat', sans-serif;
+}
+
+h1 , h2{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    margin: 0px 0px 15px 0px;
+    padding: 0px;
+    text-transform: capitalize;
+}
+
+h1{
+    color:white;
+    font-size: 65px;
+}
+
+h2{ 
+    font-size: 25px;
+}
+
+h3 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    color: maroon;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+button , a {
+    cursor: pointer;
+}
+
+p {
+    line-height: 1.5;
+}
+
+.header-background{
+    height: 260px;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)) ,url('../img/headerBackground.jpg');
+    background-size:cover;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.header-background div{
+    width:190px;
+    height:50px;
+    border:1px solid white;
+    margin-top:70px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    column-gap:15px;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.header-background a{
+    color:white;
+}
+
+.header-background a:hover{
+    color:maroon;
+}
+
+.header-background .vr{
+    width:0px;
+    height:40%;
+    margin-top:0;
+    border-width:1px;
+    border-style:solid;
+    border-color:transparent transparent transparent white;
+}

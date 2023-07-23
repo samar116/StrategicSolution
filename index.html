@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Strategic Solution</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+        <link rel="icon" type="image/x-icon" href="img/osama.jpg">
+    
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300|Nunito:400,700&display=swap" rel="stylesheet">
+
+        <!--Icons-->
+        <script src="https://kit.fontawesome.com/cb354ecbca.js" crossorigin="anonymous"></script>
+        <link href="css/pages-style.css" rel="stylesheet" type="text/css"/>
+        <link href="css/header-style.css" rel="stylesheet" type="text/css"/>
+        <link href="css/footer-style.css" rel="stylesheet" type="text/css"/> 
+        <link href="css/contact-style.css" rel="stylesheet" type="text/css"/> 
+        <link href="css/about-style.css" rel="stylesheet" type="text/css"/> 
+        <link href="css/index-style.css" rel="stylesheet" type="text/css"/> 
+       
+        
+        
+
+    </head>
+
+    <body>
+
+        <header>
+            <nav>
+                <a href="#index" class="logo">
+                    <div>
+                        <h2>Strategic Solution</h2>
+                        <hr />
+                        <label>General Trading</label>
+                    </div>
+                </a>
+                
+                <ul>
+                    <li><a href="#index">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><button onclick="showMobileMenu()"><i class="fa-solid fa-bars"></i></button></li>
+                </ul>
+            </nav>
+        </header>
+        <nav class="mobile-menu">
+            <ul class="mobile-list">
+                <li><a href="#index">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav> 
+        <!-- home -->
+        
+        <section  id="main" class="home">
+                <div id="index">
+                    <button id="btnPrevious"><i class="fa-solid fa-arrow-left"></i></button>
+                    <div style="flex-direction: column;">
+                        <h1>Strategic Solution</h1>
+                        <button class="button" onclick="openAbout()">get started</button>
+                    </div>
+                    <button id="btnNext"><i class="fa-sharp fa-solid fa-arrow-right"></i></button>
+                </div>
+    
+                <div>
+                    <button id="btn1"></button>
+                    <button id="btn2"></button>
+                    <button id="btn3"></button>
+                    <button id="btn4"></button>
+                </div>
+        </section>
+    
+        <!--<div class="Agencies">
+            <h1>Agencies</h1>
+        </div>-->
+
+       <!--- end home -->
+
+          <!-- about us -->
+
+          <section  id="about" class="about">
+            <div class="about-contents">
+                <h1>about us</h1>
+                <div class="about-company"> 
+                    <figure>
+                        <img src="img/aboutLogo.png" />
+                    </figure>
+                    <div>
+                        <h3>Welcome to Our Site</h3>
+                        <p>
+                            We are proud to introduce ourselves to you (Strategic Solutions General Trading Company), the company's activities are concentrated in the field of general trade and specifically in the medical field to employ and provide manpower to the Ministry of Health. The aim of the company is to keep pace with the rapid development of the Kuwaiti market and economic structure
+                            <span id="text1">, and will be widely diversified to maintain its leading position in Kuwait and expand in the region in the future. It has become one of the leading companies in the field of general trade in Kuwait by providing documented services to customers. The company is engaged in multi-purpose areas and services that can be provided upon request, we know how fast in the global business environment, and the company is committed to improving the business relationship in various fields. The mission of the company that aims towards further achievements and contribution to the achievement of the national public interest.</span>
+                        </p>
+                        <button id="btn1-about" onclick="showText(1,1)">read more <i class="fa-solid fa-chevron-down"></i></button>
+                    </div>
+                </div>
+                <br/>
+                <div class="objectives">
+                    <div>
+                        <img src="img/about-mission.jpg"/>
+                        <h3>Our Mission</h3>
+                        <p>INHL is the main source of nursing scholarship and nursing leadership at local Harvard School, national and international orientation for education, healthcare, practice and research. To achieve this vision
+                            <span id="text2">, INHL provides individual focus and relevant education and research programs for the INHL mission</span>
+                        </p>
+                        <button id="btn2-about" onclick="showText(2,2)">read more <i class="fa-solid fa-chevron-down"></i></button>
+                    </div>
+                    <div>
+                        <img src="img/about-vision.jpg"/>
+                        <h3>Our Vision</h3>
+                        <p>INHL is to increase nursing involvement in leading health services through joint collaboration between professionals, leadership skills development and the work of scientists. The ultimate goal is to improve
+                            <span id="text3"> the health of families, patients and communities.</span>
+                        </p>
+                        <button id="btn3-about" onclick="showText(3,3)">read more <i class="fa-solid fa-chevron-down"></i></button>
+                    </div>
+                    <div>
+                        <img src="img/about-objective.jpg"/>
+                        <h3>Our Objective</h3>
+                        <p>We are determined to obtain a high level of excellence to be one of the leaders in the regional market in several areas, our goal is to provide exceptional services and standards that exceed customer expectations
+                            <span id="text4">, and to conduct all business activities with complete integrity and fairness. We believe that the value and potential of each of our employees strives to create a healthy and safe environment, an environment that encourages teamwork, and personal growth and dedication. We are committed to the continuous improvement of business processes and maintaining a healthy growth rate, based on many years of experience, proper process management, ethical behavior and commitment to quality is our goal.</span>
+                        </p>
+                        <button id="btn4-about" onclick="showText(4,4)">read more <i class="fa-solid fa-chevron-down"></i></button>
+                    </div>
+                </div>
+
+                <h1>our team</h1>
+
+                <div id="team" class="team" > 
+                    <div >
+                        <div id="emp1">
+                            <img src="img/emp4.jpeg" style="box-shadow: none; "/>
+                            <div style="box-shadow: none;">
+                                <h3>Mohammed Hussain Jawhar</h3>
+                                <p>
+                                    - Captain at Kuwait Airways Corporation
+                                </p> 
+                            </div>
+                        </div>
+
+                        <div id="emp2">
+                            <img src="img/emp2.jpeg" style="box-shadow: none; border-radius: 20px 0 0 20px;"/>
+                            <div style="box-shadow: none;border-radius: 0 20px 20px 0">
+                                <h3>Fatema Hussein Jawhar</h3>
+                                <p>
+                                    - Bachelor of Law<br>
+                                    - Master of Laws in Financial Operations
+                                </p> 
+                            </div>
+                        </div>
+
+                        <div id="emp3">
+                            <img src="img/emp3.jpeg" style="box-shadow: none; border-radius: 20px 0 0 20px;"/>
+                            <div style="box-shadow: none;border-radius: 0 20px 20px 0">
+                                <h3>Nasra Abd alaziz</h3>
+                                <p>
+                                    - General Manager of Strategic Solutions Company, employee of the Ministry of Health, 1989 to 2017.<br/>
+                                    - Office of the Minister of Health.<br/>
+                                    - Office of the Undersecretary of the Ministry.<br/>
+                                    - Project Consultant at SOC.<br/>
+                                    - Consultant of Al Dana International Company for General Trading and Contracting.<br/>
+                                    - Consultant of the United Octagon Company.<br/>
+                                    - Director of Medical Licenses Wara Hospital.Consultant Health Insurance Hospitals Company.
+                                </p> 
+                            </div>
+                        </div>
+
+                        <div id="emp4">
+                            <img src="img/emp1.jpeg" style="box-shadow: none; border-radius: 20px 0 0 20px;"/>
+                            <div style="box-shadow: none;border-radius: 0 20px 20px 0">
+                                <h3>Dr.Ismael Hussein Hanafi</h3>
+                                <p>
+                                    - Lecturer at the Faculty of Pharmacy, Cairo University, Department of Pharmacology<br/>
+                                    - Assistant Researcher in Drug Control in Egypt<br/>
+                                    - Advertising representative at Julphar company<br/>
+                                    - Regional Director of SWISS Company<br/>
+                                    - General Manager of EI.H.I General Trading Company   
+                                </p> 
+                            </div>
+                        </div>
+                        
+                        
+                        <div id="emp5">
+                            <img src="img/emp5.jpg" style="box-shadow: none; border-radius: 20px 0 0 20px;"/>
+                            <div style="box-shadow: none;border-radius: 0 20px 20px 0">
+                                <h3>Ahmed Metwally </h3>
+                                <p>
+                                    - Operation Manager<br>
+                                    - <strong>Mobile</strong> : 51666500    <br>
+                                    -<strong>Email</strong> : recruitment@ssgtkw.com<br>
+                                </p> 
+                            </div>
+                        </div>
+
+                    </div>
+                    <div>
+                        <button id="btnEmp1"></button>
+                        <button id="btnEmp2"></button>
+                        <button id="btnEmp3"></button>
+                        <button id="btnEmp4"></button>
+                       <button id="btnEmp5"></button>
+                    </div>
+                </div>
+
+                <h1>Activities and Commitments</h1>
+                <div class="activities">
+
+                    <ul>
+                        <li>
+                            <h2>Medical Services</h2>
+                            <p>
+                                We are Strategic Solutions Medical Services Company providing services and products to hospitals and government institutions in Kuwait and other GCC countries with our multidisciplinary team, we believe in the quality of services that distinguish all employees in our company and we also own 3 multiple foreign agencies in medical services and to become the Gulf company of choice for customers and partners to provide the best solutions and services in the medical field.
+                            </p>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <h2>General Trade</h2>
+                            <p>
+                                Strategic Solutions General Trading Company recruits and employs manpower from different countries according to the client's requirements in Kuwait as well as all GCC countries
+                            </p>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <h2>Employing the workforce and consulting</h2>
+                            <p>
+                                Domestic and Foreign
+                            </p>
+                        </li>
+                    </ul>
+    
+                </div>
+                <h1>Agencies</h1>
+                <div class="agencies">
+                    <button id="btn1Previous" ><i class="fa-solid fa-arrow-left"></i></button>
+                    <div class="items" >
+                        <div class="item"><img src="img/fujifilm.png"/></div>
+                        <div class="item"><img src="img/burnshield.png"/></div>
+                        <div class="item"><img src="img/lavior.png"/></div>
+                        <div class="item"><img src="img/medicross.png"/></div>
+                    </div>
+                    <button id="btn1Next" ><i class="fa-sharp fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+       <!-- end about us-->
+
+
+       <!-- contact us -->
+
+       <section id="contact" class="contact">
+        <div class="contact-contents">
+            <h1>contact us</h1>
+
+            <a href="">
+                    <i class="fa-sharp fa-solid fa-location-dot"></i>
+                    <h6>address</h6>
+                    <p >Kuwait</p>
+            </a>
+
+            <a href="tel:+96597282232">
+                <i class="fa-solid fa-phone"></i>
+                <h6>phone</h6>
+                <p>+965-97282232</p>
+            </a>
+            <a href="mailto:Info@ssgtkw.com">
+                <i class="fa-solid fa-envelope"></i>
+                <h6>email</h6>
+                <p>Info@ssgtkw.com</p>
+            </a>
+
+            <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d890602.8379558094!2d46.975283310765526!3d29.314100397431236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3fc5363fbeea51a1%3A0x74726bcd92d8edd2!2sKuwait!5e0!3m2!1sen!2sjo!4v1664104551226!5m2!1sen!2sjo"  style="border:0;width:100%;height: 100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div>
+
+                <form method="get" onsubmit="return validataForm()" name="contactForm">
+                    <input type="text" name="name" placeholder="Your Name"/>
+                    <input type="email" name="email" placeholder="Your Email"/>
+                    <input type="text" name="subject" placeholder="Subject"/>
+                    <textarea name="message"  placeholder="Message"></textarea>
+                    <input type="submit" value="Send Message"/>
+                </form>
+                
+            </div>
+        </div>
+    </section>
+
+   
+    </div>
+
+    <div id="alert" class="alert">
+        <div>
+            <h2>Wrong data</h2>
+            <label>Please fill in all fields to complete the submission process.</label>
+            <button onclick="removeAlert()">Done</button>
+        </div>
+    </div>
+
+       <!-- end contact us -->
+
+    
+
+        <footer>
+            <div class="footer-contents">
+
+                <ul>
+                    <li>
+                        <h2>Strategic Solution</h2>
+                        <p>
+                            the company's activities are concentrated in the field of general trade and specifically in the medical field to employ and provide manpower to the Ministry of Health. The aim of the company is to keep pace with the rapid development of the Kuwaiti market and economic structure.
+                        </p>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li>
+                        <h2>Contact</h2>
+                        <p>
+                            <strong>Phone:</strong> +965 97282232 / 65122124<br>
+                            <strong>Email:</strong> Info@ssgtkw.com<br>
+                         </p>
+                         <div class="social-links">
+                            <a href=""><i class="fa-brands fa-twitter"></i></a>
+                            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            <a href=""><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li>
+                        <h2>About</h2>
+                        <ol>
+                            <li><a href="#index">Home</a></li>
+                            <li><a href="#about">About us</a></li>
+                            <li><a href="#contact">Contact us</a></li>
+                        </ol>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-copyright">
+                &copy; Copyright<a href="#index">Strategic Solution</a>all rights reserved
+            </div>
+        </footer>
+
+    </body>
+</html>
+
+<script src="javascript/chnageMenuColorOnScroll.js"></script>
+<script src="javascript/homeChangeBackgroundImages.js"> </script>
+<script src="javascript/showMoblieMenu.js"></script>
+<script src="javascript/about.js"></script>
+<script src="javascript/contact.js"></script>
+<script src="javascript/changeEmp-readMore.js"></script>
+<script type="text/javascript">
+    function openAbout(){
+        window.location.replace("about.html");
+    }
+    </script>
